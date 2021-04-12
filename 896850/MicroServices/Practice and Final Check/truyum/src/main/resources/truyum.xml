@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="item1" class="com.cognizant.truyum.model.MenuItem"> 
+		<property name="id" value="121"/>
+		<property name="name" value="Pizza"/>
+		<property name="price" value="150.0"/>	
+		<property name="active" value="true"/>
+		<property name="dateOfLaunch" value="03/03/2021"/>
+		<property name="category" value="Italian"/>
+		<property name="freeDelivery" value="true"/>
+	</bean>
+	
+	<bean id="item2" class="com.cognizant.truyum.model.MenuItem"> 
+		<property name="id" value="122"/>
+		<property name="name" value="Pasta"/>
+		<property name="price" value="125.0"/>	
+		<property name="active" value="true"/>
+		<property name="dateOfLaunch" value="03/03/2021"/>
+		<property name="category" value="Italian"/>
+		<property name="freeDelivery" value="true"/>
+	</bean>
+
+	<bean id="item3" class="com.cognizant.truyum.model.MenuItem"> 
+		<property name="id" value="102"/>
+		<property name="name" value="Poha"/>
+		<property name="price" value="25.0"/>	
+		<property name="active" value="true"/>
+		<property name="dateOfLaunch" value="03/03/2021"/>
+		<property name="category" value="Indian"/>
+		<property name="freeDelivery" value="false"/>
+	</bean>
+	
+	<bean id="item4" class="com.cognizant.truyum.model.MenuItem"> 
+		<property name="id" value="104"/>
+		<property name="name" value="Samosa"/>
+		<property name="price" value="15.0"/>	
+		<property name="active" value="true"/>
+		<property name="dateOfLaunch" value="03/03/2021"/>
+		<property name="category" value="Indian"/>
+		<property name="freeDelivery" value="true"/>
+	</bean>
+	
+	<bean id="item5" class="com.cognizant.truyum.model.MenuItem"> 
+		<property name="id" value="112"/>
+		<property name="name" value="Kachori"/>
+		<property name="price" value="20.0"/>	
+		<property name="active" value="true"/>
+		<property name="dateOfLaunch" value="03/03/2021"/>
+		<property name="category" value="Indian"/>
+		<property name="freeDelivery" value="true"/>
+	</bean>
+<!-- 	<bean id="dateFormat" class="java.text.SimpleDateFormat">
+		<constructor-arg value="dd/MM/yyyy" />
+	</bean>
+ -->
+ 	<bean id="menuList" class="java.util.ArrayList">
+ 		<constructor-arg>
+			<list>
+				<ref bean="item1"></ref>
+				<ref bean="item2"></ref>
+				<ref bean="item3"></ref>
+				<ref bean="item4"></ref>
+				<ref bean="item5"></ref>
+			</list>
+		</constructor-arg>
+ 	</bean>
+ 	
+</beans>

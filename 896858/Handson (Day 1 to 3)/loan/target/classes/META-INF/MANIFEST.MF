@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: account
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: 885245
+Implementation-Vendor-Id: com.cognizant
+Build-Jdk: 1.8.0_181
+Implementation-URL: https://spring.io/projects/spring-boot/account
+Created-By: Maven Integration for Eclipse
+
